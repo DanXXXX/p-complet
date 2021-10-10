@@ -1,38 +1,20 @@
-// 1. Inclusions de nos abstracts
-/*
-    – abstracts/
-|   |– _variables.scss    # Sass Variables
-|   |– _functions.scss    # Sass Functions
-|   |– _mixins.scss       # Sass Mixins
-|   |– _placeholders.scss # Sass Placeholders
-*/
-@import
-    'abstracts/variables';
 
-// 2. Inclusion de nos vendors
-/*
-    Ici, nous n'avons pas de dossier "vendors".
-    En effet, nous utilisons NPM, afin de gérer nos dépendances.
-   
-        /*
+    /*
         abstracts/
         vendors/
         base/
         layout/
         components/
         pages/
-        themes/
-
-        
-        
-        https://sass-guidelin.es/fr/
-        
+        themes/ 
         */
+@import
+    'abstracts/variables';
 
-
-// ATTENTION A BIEN REMPLIR OU COMMENTER CHAQUE LIGNE
+// 2. Inclusion de nos vendors
+@import
+    'vendors/normalize.scss';
 /*
-
 base/
  _reset.scss        # Reset/normalize
  _typography.scss   # Typography rules
@@ -40,32 +22,45 @@ base/
 */
 
 
-// 2. Import de la base
+// 3. Import de la base
 @import
+    'base/reset',
     'base/base';
 
-// 3. Import des layout
+// 4. Import des layout
  @import
-        'layout/header',
-//     'layout/sidebar',
-//     'layout/main',
-//     'layout/footer';
-       'layout/containers';
+    'layout/wrapper',
+    'layout/nav',
+    'layout/left',
+    'layout/right',
+    'layout/article',
+    'layout/form';
 
 
-// 4. Import des components
+// 5. Import des components
 @import
     
-    'components/button',
-    'components/accueil',
-    'components/colone',
-    'components/case';
+    'components/button';
+    
     
   //  'components/carousel',
-    
+
+  // 6.  pages/
+  @import
+
+    'pages/home',
+    'pages/article',
+    'pages/contact',
+    'pages/mention',
+    'pages/plan',
+    'pages/404';
 
 
-// 5. Import shame
+  // 7. themes/ 
+@import
+    'themes/admin';
+
+// . Import shame
 @import
     'shame';
 

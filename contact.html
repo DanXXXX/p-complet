@@ -18,39 +18,89 @@
 </head>
 <body>
   <div class="wrapper">
-      <!--========== HEADER ==========-->
-    <header class="left contact">
-        <a href="./index.html"><h1 class="brand">time students news</h1></a> 
-        <article class="left__article">
-            <h2 class="left__article-title">
-                Say a word
-                <span class="left__article-title--2">
-                    contact us
-                </span>
-            </h2>
-            <p class="left__article-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus veniam eveniet esse possimus consectetur eos perspiciatis, architecto repudiandae eum repellat distinctio voluptatum! Vitae, sed fuga repudiandae, recusandae natus necessitatibus est error veritatis temporibus quidem sint non deleniti quibusdam aliquid, alias accusantium illum atque consequatur autem libero officia adipisci reprehenderit.</p>
-        </article>
-        <nav class="left__nav">
-            <ul class="left__nav-navbar">
-                <li class="left__nav-navbar--li"><a href="./plan.html"> plan du site </a></li>
-            </ul>
-            <ul class="left__nav-navbar">
-                <li class="left__nav-navbar--li"><a href="./mention.html">Mention légales </a></li>
-            </ul>
-            <ul class="left__nav-navbar">
-                <li class="left__nav-navbar--li"><a href="./contact.html">Contact </a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="right">
+      <!--========== Left HEADER ==========-->
+      <header class="left contact">
+          <a href="./index.html"><h1 class="brand">time students news</h1></a> 
+          <article class="left__article">
+              <h2 class="left__article-title">
+                  Say a word
+                  <span class="left__article-title--2">
+                      contact us
+                    </span>
+                </h2>
+                <p class="left__article-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus veniam eveniet esse possimus consectetur eos perspiciatis, architecto repudiandae eum repellat distinctio voluptatum! Vitae, sed fuga repudiandae, recusandae natus necessitatibus est error veritatis temporibus quidem sint non deleniti quibusdam aliquid, alias accusantium illum atque consequatur autem libero officia adipisci reprehenderit.</p>
+            </article>
+            <nav class="left__nav">
+                <ul class="left__nav-navbar">
+                    <li class="left__nav-navbar--li"><a href="./plan.html"> plan du site </a></li>
+                </ul>
+                <ul class="left__nav-navbar">
+                    <li class="left__nav-navbar--li"><a href="./mention.html">Mention légales </a></li>
+                </ul>
+                <ul class="left__nav-navbar">
+                    <li class="left__nav-navbar--li"><a href="./contact.html">Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--========== Right Main ==========-->
+    <main class="right contact">
         <h2 class="title">Contact</h2>
         <section class="flex">
-            <div class="form">
-
-            </div>
+            <form action="" method="post" class="forms">
+                
+                    <div class="forms__contact">
+                        <div>
+                            <input type="radio" name="gender" id="genderMme" value="madame">
+                            <label for="genderMme">Mme</label> /
+                            <input type="radio" name="gender" id="genderM" value="monsieur">
+                            <label for="genderM">M.</label>
+                        </div>
+                        <input class="form__contact--item" type="text" name="firstname" value="" placeholder="Prénom">
+                        <input class="form__contact--item" type="text" name="lastname" value="" placeholder="Nom">
+                    </div>
+                    <div class="form__contact--row">
+                        <input class="form__contact--item" type="email" name="email" value="" placeholder="Adresse e-mail">
+                    </div>
+                    <div class="form__contact--row contact-form__row--bottom">
+                        <label class="form__contact--label" for="source">
+                            J'ai connu ce site grâce à
+                        </label>
+                        <select class="form__contact--item" name="source" id="source">
+                            <option value="">choisir</option>
+                            <option value="fb">Facebook</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="google">Google</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="bouche-a-oreilles">Bouche à oreilles</option>
+                            <option value="jpp">JT de 13h de Jean-Pierre Pernault</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+    
+                    <div class="form__contact--row">
+                        <label class="form__contact--label" for="messageTextarea">Pour laisser un commentaire libre à propos
+                            Time's New's,
+                            c'est par ici :</label>
+                    </div>
+                    <div class="form__contact--row form__contact--row-bottom">
+                        <textarea class="contact-form__item contact-form__item--textarea" name="message" id="messageTextarea"
+                            placeholder="Votre message"></textarea>
+                    </div>
+    
+                    <div class="form__contact--row form__contact--row-bottom">
+                        <input class="form__contact--item form__contact--item-checkbox" type="checkbox" name="infos-ok" id="infos-ok-label">
+                        <label class="form__contact--label" for="infos-ok-label">Je certifie la véracité de ces
+                            informations.</label>
+                    </div>
+    
+                    <div class="form__contact--row form__contact--row-bottom">
+                        <label for="fileUpload">Ajouter un fichier :</label>&nbsp;
+                        <input type="file" name="file" id="fileUpload" placeholder="Parcourir" >
+                    </div>
+                    <button class="btn-form">Envoyer</button>
+                          
+            </form>
         </section>
-
-        
     </main>
 </div>
     
